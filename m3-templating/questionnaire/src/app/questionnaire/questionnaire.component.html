@@ -1,0 +1,7 @@
+<div class="container"><h1>{{title}}</h1>
+  <app-question *ngFor="let q of questions; let i=index"
+                [id]="q.qid"
+                [question]="q.question"
+                [questionType]="q.questionType">
+  </app-question>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <p class="question">{{question}}</p>
+  <app-option-boolean [id]="id"
+                      *ngIf="questionType===questionTypeEnum.Boolean"
+                      (onAnswered)="onAnswered($event)"></app-option-boolean>
+  <app-option-rating [id]="id"
+                     *ngIf="questionType===questionTypeEnum.Rating"
+                     (onAnswered)="onAnswered($event)"></app-option-rating>
+</div>
